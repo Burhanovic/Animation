@@ -1,0 +1,126 @@
+body{
+    background-color: antiquewhite;
+}
+
+@keyframes pulse {
+    0% {
+        color: black;
+    } 
+    10%{
+        color: brown;
+    }
+
+    50%{
+        color: crimson;
+    }
+    
+    100% {
+        color: red;
+    }
+}
+
+
+
+@keyframes stretch {
+    from {
+        width: 50%;
+    }
+    to {
+        width: 100%;
+    }
+
+    
+}
+
+@keyframes stretch2 {
+    from{
+        width: 0%;
+    }
+    to{
+        width: 100%;
+    }
+}
+
+@keyframes expand {
+    from {
+        height: 80px;
+    }
+    to{
+        height: 150px;
+    }
+}
+
+@keyframes spin {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes smaller {
+    from{
+        width: 150px;
+        height: 150px;
+    }
+    to{
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@keyframes bigger {
+    from{
+        width: 50px;
+        height: 50px;
+    }
+    to{
+        width: 150px;
+        height: 150px;
+    }
+}
+
+h1{
+    background-color: brown;
+    animation: stretch 2s alternate infinite, pulse 2s infinite;
+    height: 10px;
+    border-radius: 60%;
+    margin: auto;
+}
+
+.dd{
+    text-align: center;
+    height: 150px;
+}
+
+.img{
+    width: 150px;
+    height: 150px;
+    clip-path: circle(60px at 60px 80px);
+    margin: auto;
+    margin-top: 100px;
+    
+}
+
+.b{
+    border: 1px solid black;
+    display: flex;
+    background-color: darkgrey;
+    margin-top: 100px;
+}
+
+
+.loading{
+    background-color: rgb(20, 228, 20);
+    height: 100px;
+    animation: stretch2 20s infinite;
+    animation-timing-function: ease;
+    
+}
+
+.im{
+    animation: spin 1.5s infinite , smaller 1.5s infinite alternate ;
+    width: 150px;
+    height: 150px;
+}
